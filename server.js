@@ -1,34 +1,4 @@
-Skip to content
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@kaviraj121 
-iarobinson
-/
-useful-programmer-portfolio-app
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-useful-programmer-portfolio-app/server.js /
-@iarobinson
-iarobinson Respond with an array of users objects rather than an object with use…
-…
-Latest commit fb1a8ec on Sep 28, 2020
- History
- 1 contributor
-173 lines (144 sloc)  4.41 KB
-  
 // init project
 var express = require('express');
 var mongo = require('mongodb');
@@ -202,15 +172,3 @@ app.get("/api/exercise/users", (req, res) => {
 var listener = app.listen(port, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
