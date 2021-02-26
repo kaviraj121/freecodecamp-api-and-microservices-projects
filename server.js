@@ -19,6 +19,14 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
+app.get("/timestamp", function(req, res) {
+  res.sendFile(__dirname + '/views/timestamp.html');
+});
+
+app.get("/header", function(req, res) {
+  res.sendFile(__dirname + '/views/header.html');
+});
+
 
 // your first API endpoint... 
 app.get("/api/hello", function (req, res) {
@@ -57,6 +65,7 @@ app.get("/api/timestamp/:date_string", function(req, res) {
     })
   }
 });
+
 
 // listen for requests :)
 var listener = app.listen(port, function () {
